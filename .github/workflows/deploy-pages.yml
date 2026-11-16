@@ -31,10 +31,33 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
 
+      - name: Restore binary site files
+        run: |
+          set -euo pipefail
+          if [ ! -f site.SHA256SUMS ]; then
+            echo "FAIL: missing site.SHA256SUMS" >&2
+            exit 1
+          fi
+          found=0
+          while IFS= read -r -d '' f; do
+            found=$((found + 1))
+            out="${f%.b64}"
+            base64 --decode "$f" > "$out"
+            rm -f "$f"
+          done < <(find site -type f -name '*.b64' -print0)
+          if [ "$found" -eq 0 ]; then
+            echo "FAIL: no site/**/*.b64 files to restore" >&2
+            exit 1
+          fi
+          echo "restored $found binary file(s)"
+          expected=$(grep -c . site.SHA256SUMS)
+          [ "$found" -eq "$expected" ] || { echo "FAIL: restored $found but SUMS lists $expected" >&2; exit 1; }
+          sha256sum -c site.SHA256SUMS
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
-          path: .
+          path: site
 
       - name: Deploy
         id: deployment
