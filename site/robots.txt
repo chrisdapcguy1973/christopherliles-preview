@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://christopherliles.com/sitemap-index.xml
