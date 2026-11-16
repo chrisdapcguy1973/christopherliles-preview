@@ -1,0 +1,80 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Christopher Liles · Senior Tier 3 Product Solutions Engineer",
+  "home_page_url": "https://chrisdapcguy1973.github.io/christopherliles-preview/",
+  "feed_url": "https://chrisdapcguy1973.github.io/christopherliles-preview/feed.json",
+  "description": "Practical systems, clean networks, and a homelab that earns its rack space.",
+  "language": "en-US",
+  "authors": [
+    {
+      "name": "Christopher Liles",
+      "url": "https://chrisdapcguy1973.github.io/christopherliles-preview/"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://chrisdapcguy1973.github.io/christopherliles-preview/blog/homelab-dns-telemetry-stack/",
+      "url": "https://chrisdapcguy1973.github.io/christopherliles-preview/blog/homelab-dns-telemetry-stack/",
+      "title": "A Quiet DNS and Telemetry Stack for the Lab",
+      "content_text": "AdGuard Home in front of Unbound, plus Prometheus and Grafana, for DNS that is predictable and metrics that actually get used.",
+      "summary": "AdGuard Home in front of Unbound, plus Prometheus and Grafana, for DNS that is predictable and metrics that actually get used.",
+      "date_published": "2026-10-28T00:00:00.000Z",
+      "date_modified": "2026-10-28T00:00:00.000Z",
+      "tags": [
+        "homelab",
+        "dns",
+        "unbound",
+        "prometheus",
+        "grafana",
+        "adguard"
+      ],
+      "authors": [
+        {
+          "name": "Christopher Liles"
+        }
+      ]
+    },
+    {
+      "id": "https://chrisdapcguy1973.github.io/christopherliles-preview/blog/proxmox-zfs-cluster-notes/",
+      "url": "https://chrisdapcguy1973.github.io/christopherliles-preview/blog/proxmox-zfs-cluster-notes/",
+      "title": "Proxmox VE and ZFS: Cluster Notes from a Two-Node Lab",
+      "content_text": "How a two-node Proxmox cluster can use local ZFS for guests, a TrueNAS backend for shared data, and replication that is honest about what two nodes can and cannot provide.",
+      "summary": "How a two-node Proxmox cluster can use local ZFS for guests, a TrueNAS backend for shared data, and replication that is honest about what two nodes can and cannot provide.",
+      "date_published": "2026-10-08T00:00:00.000Z",
+      "date_modified": "2026-10-08T00:00:00.000Z",
+      "tags": [
+        "systems",
+        "proxmox",
+        "zfs",
+        "clustering",
+        "truenas"
+      ],
+      "authors": [
+        {
+          "name": "Christopher Liles"
+        }
+      ]
+    },
+    {
+      "id": "https://chrisdapcguy1973.github.io/christopherliles-preview/blog/opnsense-vlan-segmentation/",
+      "url": "https://chrisdapcguy1973.github.io/christopherliles-preview/blog/opnsense-vlan-segmentation/",
+      "title": "Segmenting a Homelab with OPNsense and VLANs",
+      "content_text": "A practical VLAN plan for a small lab: management, compute, storage, and services, with OPNsense interface, DHCP, and firewall rule patterns that stay easy to audit.",
+      "summary": "A practical VLAN plan for a small lab: management, compute, storage, and services, with OPNsense interface, DHCP, and firewall rule patterns that stay easy to audit.",
+      "date_published": "2026-09-14T00:00:00.000Z",
+      "date_modified": "2026-10-02T00:00:00.000Z",
+      "tags": [
+        "networking",
+        "opnsense",
+        "vlan",
+        "firewall",
+        "segmentation"
+      ],
+      "authors": [
+        {
+          "name": "Christopher Liles"
+        }
+      ]
+    }
+  ]
+}
